@@ -187,6 +187,13 @@ def fetch_images():
         ],
     )
 
+    oci_pull(
+        name = "linkerd_proxy",
+        digest = "sha256:2cbbea4f038e46460bdc773889877ec8a288b86373f9c14b630b85f261ec4a73",
+        registry = "cr.l5d.io",
+        repository = "linkerd/proxy",
+    )
+
     _DEB_TO_LAYER = """\
 alias(
     name = "layer",

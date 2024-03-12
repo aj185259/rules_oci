@@ -23,6 +23,11 @@ _WWW_AUTH = {
         "scope": "repository:{repository}:pull",
         "service": "{registry}/token",
     },
+	"cr.l5d.io": {
+        "realm": "ghcr.io/token",
+        "scope": "repository:{repository}:pull",
+        "service": "ghcr.io",
+	},
     "cgr.dev": {
         "realm": "{registry}/token",
         "scope": "repository:{repository}:pull",
